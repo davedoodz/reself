@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.expo/
+web-build/
+expo-env.d.ts
+.vercel/
+.DS_Store
+*.tsbuildinfo
+.env*
+!.env.example
+
+# native build output
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
