@@ -71,3 +71,9 @@ The App Store button ships in a pending state because the app has not been
 submitted. To activate it, set the `href` on `a.appstore` in `web/index.html`
 to `https://apps.apple.com/app/id<APP_ID>` and delete its `aria-disabled`
 attribute. There is a comment at that line.
+
+### Deploying
+
+`vercel.json` at the repo root sets `outputDirectory` to `web`, so a push to
+`main` publishes <https://reself.davidlafond.xyz> with no build step and with no
+Root Directory setting needed in the Vercel dashboard. `mobile/` is never served.
